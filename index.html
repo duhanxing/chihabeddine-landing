@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihabeddine — Taste, Ritual & Hospitality</title>
+    <!-- Premium Serif Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fbfaf7;       /* Off-white / Warm paper texture tone */
+            --text-main: #222222;      /* Charcoal */
+            --text-muted: #777777;    /* Soft shadow grey */
+            --accent: #b87d4b;        /* Tea amber / Roasted coffee brown highlight */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1.8s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            color: var(--text-main);
+        }
+
+        p {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.35rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 48px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #e0ded9;
+            background-color: transparent;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            border-radius: 0; /* Sharp architectural corners */
+            outline: none;
+            transition: border-color 0.4s ease;
+            text-align: center;
+        }
+
+        input[type="email"]:focus {
+            border-color: var(--accent);
+        }
+
+        button {
+            width: 100%;
+            padding: 16px;
+            background-color: var(--text-main);
+            color: var(--bg-color);
+            border: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--accent);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Chihabeddine</h1>
+        <p>An exploration of taste, ritual, craftsmanship, and hospitality.<br>Launching soon.</p>
+        
+        <!-- Replace the action URL with your free Formspree/Kit endpoint later -->
+        <form action="YOUR_FORM_ENDPOINT_HERE" method="POST">
+            <input type="email" name="email" placeholder="Enter your email address" required autocomplete="off">
+            <button type="submit">Join the Practice</button>
+        </form>
+    </div>
+
+</body>
+</html>
